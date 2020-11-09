@@ -4,11 +4,11 @@ library(tidyverse)
 
 bbx <- getbb("Royal Wootton Bassett, Wiltshire, South West England, England, SN4, United Kingdom")
 #RWB
-#min_lon <- -1.9476463; max_lat <- -1.8605055
-#min_lat <- 51.5116457; max_lon <- 51.5617722
+min_lon <- -1.9476463; max_lat <- -1.8605055
+min_lat <- 51.5116457; max_lon <- 51.5617722
 
 
-#bbx <- rbind(x=c(min_lon,max_lon),y=c(min_lat,max_lat))
+bbx <- rbind(x=c(min_lon,max_lon),y=c(min_lat,max_lat))
 colnames(bbx) <- c("min","max")
 osmdata::available_tags("highway")
 
